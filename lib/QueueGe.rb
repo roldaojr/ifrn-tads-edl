@@ -1,5 +1,6 @@
 ##
 # A Queue data structure
+#
 class QueueGe
 	##
 	# Queue initializer
@@ -58,7 +59,6 @@ class QueueGe
 		end
 		@array[@endPos % @capacity] = item
 		@endPos += 1
-		puts "push: PF " + @endPos.to_s + " PI " + @startPos.to_s + " C " + @capacity.to_s
 	end
 	##
 	# Remove and returns the first element of the queue
@@ -70,7 +70,6 @@ class QueueGe
 		end
 		item = @array[@startPos % @capacity]
 		@startPos += 1
-		puts "pop: PF " + @endPos.to_s + " PI " + @startPos.to_s
 		# zerar ponteiros
 		if @endPos == @startPos
 			@startPos = 0
@@ -99,6 +98,14 @@ class QueueGe
 			end
 		end
 	end
+	##
+	# Get a array of queue items
+	#
+	# @return [Array] Array of queue items
+	def toArray
+		return @array
+	end
+
 	private
 	##
 	# double the array capacity
@@ -107,18 +114,3 @@ class QueueGe
 		@capacity = @capacity * 2
 	end	
 end
-
-e = QueueGe.new(5)
-e.push("a")
-e.push("b")
-e.push("c")
-e.push("d")
-e.push("e")
-
-e.pop()
-e.pop()
-e.push("f")
-e.push("g")
-e.pop()
-e.pop()
-e.print()
