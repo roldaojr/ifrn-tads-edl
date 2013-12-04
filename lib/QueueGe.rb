@@ -5,13 +5,9 @@ class QueueGe
 	##
 	# Queue initializer
 	#
-	# @params [Integer] Capacity of the queue
-	def initialize(*args)
-		if args[0]
-			@capacity = args[0]
-		else
-			@capacity = 10
-		end
+	# @param [Integer] capacity The Capacity of the queue
+	def initialize(capacity = 10)
+		@capacity = capacity
 		clear()
 	end
 	##
@@ -31,7 +27,7 @@ class QueueGe
 	##
 	# Get the queue size
 	#
-	# @return [Integer] size of queue
+	# @return [Integer] Size of queue
 	def size
 		return @endPos-@startPos
 	end
@@ -52,7 +48,7 @@ class QueueGe
 	##
 	# Insert a element in end of the queue
 	#
-	# @params [Object] item to insert
+	# @param [Object] item Item to insert
 	def push(item)
 		if @endPos-@startPos > @capacity-1
 			doubleArray()
