@@ -1,4 +1,4 @@
-require '../lib/QueueGpaises.rb'
+require '../lib/QueueGe.rb'
 
 paises = QueueGe.new(5)
 paises.push("Brasil")

@@ -19,21 +19,21 @@ class QueueGe
 	#
 	# @return [Boolean] true if empty false if not empty
 	def isEmpty?
-		return @size == 0
+		return @endPos-@startPos == 0
 	end
 	##
 	# Check if queue capacity is full
 	#
 	# @return [true, false] true if full false if not Full
 	def isFull?
-		return @size == @capacity
+		return @endPos-@startPos == @capacity
 	end
 	##
 	# Get the queue size
 	#
 	# @return [Integer] size of queue
 	def size
-		return @endPos-startPos
+		return @endPos-@startPos
 	end
 	##
 	# Get the first element on queue
@@ -66,7 +66,7 @@ class QueueGe
 	# @return [Object] the first item of the queue
 	def pop
 		if @endPos == @startPos
-			throw "QueueUnderow"
+			raise "QueueUnderow"
 		end
 		item = @array[@startPos % @capacity]
 		@startPos += 1
@@ -84,7 +84,6 @@ class QueueGe
 		@array = Array.new(@capacity)
 		@startPos = 0
 		@endPos = 0
-		@size = 0
 	end
 	##
 	# Print the queue contents
@@ -102,8 +101,16 @@ class QueueGe
 	# Get a array of queue items
 	#
 	# @return [Array] Array of queue items
-	def toArray
-		return @array
+	def toList
+		list = []
+		for i in @startPos..@endPos-1
+			if i >= @capacity
+				list << @array[i % @capacity]
+			else
+				list << @array[i]
+			end
+		end
+		return list
 	end
 
 	private
