@@ -32,16 +32,16 @@ class StackGe
 		return @pos
 	end
 	##
-	# Get the first element on stack
+	# Get the top element on stack
 	#
 	# @return [Object] the element
 	def top
 		return @array[@pos]
 	end
 	##
-	# Insert a element in end of the stack
+	# Insert a element on top of the stack
 	#
-	# @param [Object] item Item to insert
+	# @param [Object] item Element to insert
 	def push(item)
 		if @pos >= @capacity
 			raise "StackOverflow"
@@ -50,9 +50,9 @@ class StackGe
 		@pos += 1
 	end
 	##
-	# Remove and returns the first element of the stack
+	# Remove and returns the element on top of the stack
 	#
-	# @return [Object] the first item of the stack
+	# @return [Object] the top element of the stack
 	def pop
 		if @pos == 0
 			raise "StackUnderow"
@@ -77,9 +77,9 @@ class StackGe
 		end
 	end
 	##
-	# Get a array of stack items
+	# Get a array of stack elements
 	#
-	# @return [Array] Array of stack items
+	# @return [Array] Array of stack elements
 	def toList
 		list = []
 		for i in 0..@pos-1

@@ -34,21 +34,21 @@ class QueueGe
 	##
 	# Get the first element on queue
 	#
-	# @return [Object] the element
+	# @return [Object] the first element
 	def front 
 		return @array[@startPos]
 	end
 	##
 	# Get the last element on queue
 	#
-	# @return [Object] the element
+	# @return [Object] the last element
 	def back
 		return @array[@endPos-1]
 	end
 	##
 	# Insert a element in end of the queue
 	#
-	# @param [Object] item Item to insert
+	# @param [Object] item Element to insert
 	def push(item)
 		if @endPos-@startPos > @capacity-1
 			doubleArray()
@@ -59,7 +59,7 @@ class QueueGe
 	##
 	# Remove and returns the first element of the queue
 	#
-	# @return [Object] the first item of the queue
+	# @return [Object] the first element of the queue
 	def pop
 		if @endPos == @startPos
 			raise "QueueUnderow"
@@ -94,9 +94,9 @@ class QueueGe
 		end
 	end
 	##
-	# Get a array of queue items
+	# Get a array of queue elements
 	#
-	# @return [Array] Array of queue items
+	# @return [Array] Array of queue elements
 	def toList
 		list = []
 		for i in @startPos..@endPos-1
