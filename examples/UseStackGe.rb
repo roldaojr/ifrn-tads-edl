@@ -1,0 +1,15 @@
+require '../lib/StackGe.rb'
+
+paises = StackGe.new(10)
+paises.push("Brasil")
+paises.push("Argentina")
+paises.push("Paraguai")
+paises.push("Bolivia")
+paises.push("Equador")
+paises.push("Uruguai")
+paises.pop()
+paises.pop()
+paises.push("Chile")
+paises.pop()
+paises.pop()
+paises.print()
