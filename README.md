@@ -18,4 +18,4 @@ Para realizar a instalação basta apenas copiar os conteúdo da pasta lib para 
 ### Usando ###
 
 Para usar as classes basta apenas usar _require_ para importá-la para seu programa.
-Para mais detalhes de como usar a classes veja os exemplos na pasta examples.
+Para mais detalhes de como usar a classes veja os exemplos na pasta [examples](http://github.com/roldaojr/ifrn-tads-edl/tree/master/examples).
