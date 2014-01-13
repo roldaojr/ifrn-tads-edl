@@ -1,0 +1,1394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: DequeGe
+  
+    &mdash; Documentation by YARD 0.8.7.3
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (D)</a> &raquo;
+    
+    
+    <span class="title">DequeGe</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: DequeGe
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">DequeGe</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/DequeGe.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>
+A Deque data structure
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#back-instance_method" title="#back (instance method)">- (Object) <strong>back</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Get the last element on deque.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#clear-instance_method" title="#clear (instance method)">- (Object) <strong>clear</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Clear the deque making it empty.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#front-instance_method" title="#front (instance method)">- (Object) <strong>front</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Get the first element on deque.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (DequeGe) <strong>initialize</strong>(capacity = 10) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Queue initializer.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#isEmpty%3F-instance_method" title="#isEmpty? (instance method)">- (Boolean) <strong>isEmpty?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Check if deque is empty.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#isFull%3F-instance_method" title="#isFull? (instance method)">- (true, false) <strong>isFull?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Check if deque capacity is full.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#popBack-instance_method" title="#popBack (instance method)">- (Object) <strong>popBack</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Remove and returns the last element of the deque.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#popFront-instance_method" title="#popFront (instance method)">- (Object) <strong>popFront</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Remove and returns the first element of the deque.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#print-instance_method" title="#print (instance method)">- (Object) <strong>print</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Print the deque contents.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pushBack-instance_method" title="#pushBack (instance method)">- (Object) <strong>pushBack</strong>(item) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Insert a element in end of the deque.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pushFront-instance_method" title="#pushFront (instance method)">- (Object) <strong>pushFront</strong>(element) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Insert a element in front of the deque.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#size-instance_method" title="#size (instance method)">- (Integer) <strong>size</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Get the deque size.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#toList-instance_method" title="#toList (instance method)">- (Array) <strong>toList</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Get a array of deque elements.
+</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="DequeGe (class)">DequeGe</a></span></tt>) <strong>initialize</strong>(capacity = 10) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Queue initializer
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>capacity</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>10</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>
+The Capacity of the deque
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+14
+15
+16
+17</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 14</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_initialize identifier id'>initialize</span><span class='lparen token'>(</span><span class='rubyid_capacity identifier id'>capacity</span> <span class='assign token'>=</span> <span class='integer val'>10</span><span class='rparen token'>)</span>
+  <span class='rubyid_@capacity ivar id'>@capacity</span> <span class='assign token'>=</span> <span class='rubyid_capacity identifier id'>capacity</span>
+  <span class='rubyid_clear identifier id'>clear</span><span class='lparen token'>(</span><span class='rparen token'>)</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="back-instance_method">
+  
+    - (<tt>Object</tt>) <strong>back</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Get the last element on deque
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+the last element
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+50
+51
+52</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 50</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_back identifier id'>back</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_@back ivar id'>@back</span><span class='dot token'>.</span><span class='rubyid_element identifier id'>element</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="clear-instance_method">
+  
+    - (<tt>Object</tt>) <strong>clear</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Clear the deque making it empty
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+125
+126
+127
+128
+129</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 125</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_clear identifier id'>clear</span>
+  <span class='rubyid_@front ivar id'>@front</span> <span class='assign token'>=</span> <span class='rubyid_nil nil kw'>nil</span>
+  <span class='rubyid_@back ivar id'>@back</span> <span class='assign token'>=</span> <span class='rubyid_nil nil kw'>nil</span>
+  <span class='rubyid_@size ivar id'>@size</span> <span class='assign token'>=</span> <span class='integer val'>0</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="front-instance_method">
+  
+    - (<tt>Object</tt>) <strong>front</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Get the first element on deque
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+the first element
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+43
+44
+45</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 43</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_front identifier id'>front</span> 
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_@front ivar id'>@front</span><span class='dot token'>.</span><span class='rubyid_element identifier id'>element</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="isEmpty?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>isEmpty?</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Check if deque is empty
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+true if empty false if not empty
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 22</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_isEmpty? fid id'>isEmpty?</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_@size ivar id'>@size</span> <span class='eq op'>==</span> <span class='integer val'>0</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="isFull?-instance_method">
+  
+    - (<tt>true</tt>, <tt>false</tt>) <strong>isFull?</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Check if deque capacity is full
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>true</tt>, <tt>false</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+true if full false if not Full
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 29</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_isFull? fid id'>isFull?</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_@size ivar id'>@size</span> <span class='eq op'>==</span> <span class='rubyid_@capacity ivar id'>@capacity</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="popBack-instance_method">
+  
+    - (<tt>Object</tt>) <strong>popBack</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Remove and returns the last element of the deque
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+the last element of the deque
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 93</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_popBack identifier id'>popBack</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_@size ivar id'>@size</span> <span class='eq op'>==</span> <span class='integer val'>0</span>
+    <span class='rubyid_raise identifier id'>raise</span> <span class='string val'>&quot;DequeUnderow&quot;</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_node identifier id'>node</span> <span class='assign token'>=</span> <span class='rubyid_@back ivar id'>@back</span>
+  <span class='rubyid_node identifier id'>node</span><span class='dot token'>.</span><span class='rubyid_prevNode identifier id'>prevNode</span><span class='dot token'>.</span><span class='rubyid_nextNode identifier id'>nextNode</span> <span class='assign token'>=</span> <span class='rubyid_nil nil kw'>nil</span>
+  <span class='rubyid_@back ivar id'>@back</span> <span class='assign token'>=</span> <span class='rubyid_node identifier id'>node</span><span class='dot token'>.</span><span class='rubyid_prevNode identifier id'>prevNode</span>
+  <span class='rubyid_@size ivar id'>@size</span> <span class='opasgn op'>-=</span> <span class='integer val'>1</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_size identifier id'>size</span> <span class='lt op'>&lt;</span> <span class='integer val'>2</span>
+    <span class='rubyid_@front ivar id'>@front</span> <span class='assign token'>=</span> <span class='rubyid_@back ivar id'>@back</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_node identifier id'>node</span><span class='dot token'>.</span><span class='rubyid_element identifier id'>element</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="popFront-instance_method">
+  
+    - (<tt>Object</tt>) <strong>popFront</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Remove and returns the first element of the deque
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+the first element of the deque
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 110</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_popFront identifier id'>popFront</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_@size ivar id'>@size</span> <span class='eq op'>==</span> <span class='integer val'>0</span>
+    <span class='rubyid_raise identifier id'>raise</span> <span class='string val'>&quot;DequeUnderow&quot;</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_node identifier id'>node</span> <span class='assign token'>=</span> <span class='rubyid_@front ivar id'>@front</span>
+  <span class='rubyid_@front ivar id'>@front</span> <span class='assign token'>=</span> <span class='rubyid_node identifier id'>node</span><span class='dot token'>.</span><span class='rubyid_nextNode identifier id'>nextNode</span>
+  <span class='rubyid_@size ivar id'>@size</span> <span class='opasgn op'>-=</span> <span class='integer val'>1</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_size identifier id'>size</span> <span class='lt op'>&lt;</span> <span class='integer val'>2</span>
+    <span class='rubyid_@back ivar id'>@back</span> <span class='assign token'>=</span> <span class='rubyid_@front ivar id'>@front</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_node identifier id'>node</span><span class='dot token'>.</span><span class='rubyid_element identifier id'>element</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="print-instance_method">
+  
+    - (<tt>Object</tt>) <strong>print</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Print the deque contents
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 133</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_print identifier id'>print</span>
+    <span class='rubyid_node identifier id'>node</span> <span class='assign token'>=</span> <span class='rubyid_@front ivar id'>@front</span>
+    <span class='rubyid_while while kw'>while</span> <span class='rubyid_node identifier id'>node</span> <span class='rubyid_do do kw'>do</span>
+      <span class='rubyid_puts identifier id'>puts</span> <span class='rubyid_node identifier id'>node</span><span class='dot token'>.</span><span class='rubyid_element identifier id'>element</span>
+      <span class='rubyid_node identifier id'>node</span> <span class='assign token'>=</span> <span class='rubyid_node identifier id'>node</span><span class='dot token'>.</span><span class='rubyid_nextNode identifier id'>nextNode</span>
+    <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='comment val'>##</span>
+  <span class='comment val'># Get a array of deque elements</span>
+  <span class='comment val'>#</span>
+  <span class='comment val'># @return [Array] Array of deque elements</span>
+  <span class='rubyid_def def kw'>def</span> <span class='rubyid_toList identifier id'>toList</span>
+    <span class='rubyid_list identifier id'>list</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+    <span class='rubyid_node identifier id'>node</span> <span class='assign token'>=</span> <span class='rubyid_@front ivar id'>@front</span>
+    <span class='rubyid_while while kw'>while</span> <span class='rubyid_node identifier id'>node</span> <span class='rubyid_do do kw'>do</span>
+      <span class='rubyid_list identifier id'>list</span> <span class='lshft op'>&lt;&lt;</span> <span class='rubyid_node identifier id'>node</span><span class='dot token'>.</span><span class='rubyid_element identifier id'>element</span>
+      <span class='rubyid_node identifier id'>node</span> <span class='assign token'>=</span> <span class='rubyid_node identifier id'>node</span><span class='dot token'>.</span><span class='rubyid_nextNode identifier id'>nextNode</span>
+    <span class='rubyid_end end kw'>end</span>
+    <span class='rubyid_return return kw'>return</span> <span class='rubyid_list identifier id'>list</span>
+  <span class='rubyid_end end kw'>end</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="pushBack-instance_method">
+  
+    - (<tt>Object</tt>) <strong>pushBack</strong>(item) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Insert a element in end of the deque
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>item</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+Element to insert
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 57</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_pushBack identifier id'>pushBack</span><span class='lparen token'>(</span><span class='rubyid_item identifier id'>item</span><span class='rparen token'>)</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_isFull? fid id'>isFull?</span>
+    <span class='rubyid_raise identifier id'>raise</span> <span class='string val'>&quot;DequeOverow&quot;</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_node identifier id'>node</span> <span class='assign token'>=</span> <span class='rubyid_DequeNode constant id'>DequeNode</span><span class='dot token'>.</span><span class='rubyid_new identifier id'>new</span><span class='lparen token'>(</span><span class='rubyid_item identifier id'>item</span><span class='comma token'>,</span> <span class='rubyid_nil nil kw'>nil</span><span class='comma token'>,</span> <span class='rubyid_@back ivar id'>@back</span><span class='rparen token'>)</span>
+  <span class='rubyid_if if kw'>if</span><span class='lparen token'>(</span><span class='rubyid_@back ivar id'>@back</span><span class='rparen token'>)</span>
+    <span class='rubyid_@back ivar id'>@back</span><span class='dot token'>.</span><span class='rubyid_nextNode identifier id'>nextNode</span> <span class='assign token'>=</span> <span class='rubyid_node identifier id'>node</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_@back ivar id'>@back</span> <span class='assign token'>=</span> <span class='rubyid_node identifier id'>node</span>
+  <span class='rubyid_@size ivar id'>@size</span> <span class='opasgn op'>+=</span> <span class='integer val'>1</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_size identifier id'>size</span> <span class='lt op'>&lt;</span> <span class='integer val'>2</span>
+    <span class='rubyid_@front ivar id'>@front</span> <span class='assign token'>=</span> <span class='rubyid_@back ivar id'>@back</span>
+  <span class='rubyid_end end kw'>end</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="pushFront-instance_method">
+  
+    - (<tt>Object</tt>) <strong>pushFront</strong>(element) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Insert a element in front of the deque
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>element</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+Element to insert
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 75</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_pushFront identifier id'>pushFront</span><span class='lparen token'>(</span><span class='rubyid_element identifier id'>element</span><span class='rparen token'>)</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_self self kw'>self</span><span class='dot token'>.</span><span class='rubyid_isFull? fid id'>isFull?</span>
+    <span class='rubyid_raise identifier id'>raise</span> <span class='string val'>&quot;DequeOverow&quot;</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_node identifier id'>node</span> <span class='assign token'>=</span> <span class='rubyid_DequeNode constant id'>DequeNode</span><span class='dot token'>.</span><span class='rubyid_new identifier id'>new</span><span class='lparen token'>(</span><span class='rubyid_element identifier id'>element</span><span class='comma token'>,</span> <span class='rubyid_@front ivar id'>@front</span><span class='rparen token'>)</span>
+  <span class='rubyid_if if kw'>if</span><span class='lparen token'>(</span><span class='rubyid_@front ivar id'>@front</span><span class='rparen token'>)</span>
+    <span class='rubyid_@front ivar id'>@front</span><span class='dot token'>.</span><span class='rubyid_prevNode identifier id'>prevNode</span> <span class='assign token'>=</span> <span class='rubyid_node identifier id'>node</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_@front ivar id'>@front</span> <span class='assign token'>=</span> <span class='rubyid_node identifier id'>node</span>
+  <span class='rubyid_@size ivar id'>@size</span> <span class='opasgn op'>+=</span> <span class='integer val'>1</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_size identifier id'>size</span> <span class='lt op'>&lt;</span> <span class='integer val'>2</span>
+    <span class='rubyid_@back ivar id'>@back</span> <span class='assign token'>=</span> <span class='rubyid_@front ivar id'>@front</span>
+  <span class='rubyid_end end kw'>end</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="size-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>size</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Get the deque size
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+Size of deque
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 36</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_size identifier id'>size</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_@size ivar id'>@size</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="toList-instance_method">
+  
+    - (<tt>Array</tt>) <strong>toList</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    <p>
+Get a array of deque elements
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+Array of deque elements
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/DequeGe.rb', line 144</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_toList identifier id'>toList</span>
+    <span class='rubyid_list identifier id'>list</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+    <span class='rubyid_node identifier id'>node</span> <span class='assign token'>=</span> <span class='rubyid_@front ivar id'>@front</span>
+    <span class='rubyid_while while kw'>while</span> <span class='rubyid_node identifier id'>node</span> <span class='rubyid_do do kw'>do</span>
+      <span class='rubyid_list identifier id'>list</span> <span class='lshft op'>&lt;&lt;</span> <span class='rubyid_node identifier id'>node</span><span class='dot token'>.</span><span class='rubyid_element identifier id'>element</span>
+      <span class='rubyid_node identifier id'>node</span> <span class='assign token'>=</span> <span class='rubyid_node identifier id'>node</span><span class='dot token'>.</span><span class='rubyid_nextNode identifier id'>nextNode</span>
+    <span class='rubyid_end end kw'>end</span>
+    <span class='rubyid_return return kw'>return</span> <span class='rubyid_list identifier id'>list</span>
+  <span class='rubyid_end end kw'>end</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on 01/12/14 21:51:06 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7.3 (ruby-1.8.6).
+</div>
+
+  </body>
+</html>
