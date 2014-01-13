@@ -1,4 +1,9 @@
 ##
+# A Deque linked list node
+#
+class DequeNode < Struct.new :element, :nextNode, :prevNode
+end
+##
 # A Deque data structure
 #
 class DequeGe
@@ -15,110 +20,121 @@ class DequeGe
 	#
 	# @return [Boolean] true if empty false if not empty
 	def isEmpty?
-		return @endPos-@startPos == 0
+		return @size == 0
 	end
 	##
 	# Check if deque capacity is full
 	#
 	# @return [true, false] true if full false if not Full
 	def isFull?
-		return @endPos-@startPos == @capacity
+		return @size == @capacity
 	end
 	##
 	# Get the deque size
 	#
 	# @return [Integer] Size of deque
 	def size
-		return @endPos-@startPos
+		return @size
 	end
 	##
 	# Get the first element on deque
 	#
 	# @return [Object] the first element
 	def front 
-		return @array[@startPos]
+		return @front.element
 	end
 	##
 	# Get the last element on deque
 	#
 	# @return [Object] the last element
 	def back
-		return @array[@endPos-1]
+		return @back.element
 	end
 	##
 	# Insert a element in end of the deque
 	#
 	# @param [Object] item Element to insert
 	def pushBack(item)
-		if @endPos-@startPos > @capacity-1
-			doubleArray()
+		if self.isFull?
+			raise "DequeOverow"
 		end
-		@startPos -= 1
-		@array[@startPos] = item
+		node = DequeNode.new(item, nil, @back)
+		if(@back)
+			@back.nextNode = node
+		end
+		@back = node
+		@size += 1
+		if size < 2
+			@front = @back
+		end
 	end
 	##
 	# Insert a element in front of the deque
 	#
-	# @param [Object] item Element to insert
-	def pushFront(item)
-		if @endPos-@startPos > @capacity-1
-			doubleArray()
+	# @param [Object] element Element to insert
+	def pushFront(element)
+		if self.isFull?
+			raise "DequeOverow"
 		end
-		@array[@endPos % @capacity] = item
-		@endPos += 1
+		node = DequeNode.new(element, @front)
+		if(@front)
+			@front.prevNode = node
+		end
+		@front = node
+		@size += 1
+		if size < 2
+			@back = @front
+		end
 	end
 	##
 	# Remove and returns the last element of the deque
 	#
 	# @return [Object] the last element of the deque
 	def popBack
-		if @endPos == @startPos
-			raise "QueueUnderow"
+		if @size == 0
+			raise "DequeUnderow"
 		end
-		item = @array[@endPos]
-		@endPos -= 1
-		# zerar ponteiros
-		if @endPos == @startPos
-			@startPos = 0
-			@endPos = 0
+		node = @back
+		node.prevNode.nextNode = nil
+		@back = node.prevNode
+		@size -= 1
+		if size < 2
+			@front = @back
 		end
-		return item
+		return node.element
 	end
 	##
 	# Remove and returns the first element of the deque
 	#
 	# @return [Object] the first element of the deque
 	def popFront
-		if @endPos == @startPos
-			raise "QueueUnderow"
+		if @size == 0
+			raise "DequeUnderow"
 		end
-		item = @array[@startPos % @capacity]
-		@startPos += 1
-		# zerar ponteiros
-		if @endPos == @startPos
-			@startPos = 0
-			@endPos = 0
+		node = @front
+		@front = node.nextNode
+		@size -= 1
+		if size < 2
+			@back = @front
 		end
-		return item
+		return node.element
 	end
 	##
 	# Clear the deque making it empty
 	#
 	def clear
-		@array = Array.new(@capacity)
-		@startPos = 0
-		@endPos = 0
+		@front = nil
+		@back = nil
+		@size = 0
 	end
 	##
 	# Print the deque contents
 	#
 	def print
-		for i in @startPos..@endPos-1
-			if i >= @capacity
-				puts @array[i % @capacity]
-			else
-				puts @array[i]
-			end
+		node = @front
+		while node do
+			puts node.element
+			node = node.nextNode
 		end
 	end
 	##
@@ -127,21 +143,11 @@ class DequeGe
 	# @return [Array] Array of deque elements
 	def toList
 		list = []
-		for i in @startPos..@endPos-1
-			if i >= @capacity
-				list << @array[i % @capacity]
-			else
-				list << @array[i]
-			end
+		node = @front
+		while node do
+			list << node.element
+			node = node.nextNode
 		end
 		return list
 	end
-
-	private
-	##
-	# double the array capacity
-	#
-	def doubleArray
-		@capacity = @capacity * 2
-	end	
 end
