@@ -16,9 +16,10 @@ class StackGeTest < Test::Unit::TestCase
 		paises.push("Chile")
 		paises.push("Brasil")
 		paises.pop()
-		paises.pop()
+		pais = paises.pop()
 		assert_equal paises.size(), 2
 		assert_equal paises.toList(), ["Argentina", "Paraguai"]
+		assert_equal pais, "Chile"
 	end
 	def test_empty
 		paises = StackGe.new(5)
@@ -34,5 +35,12 @@ class StackGeTest < Test::Unit::TestCase
 		paises.push("Paraguai")
 		paises.push("Chile")
 		assert_equal paises.isFull?(), true
+	end
+	def test_top
+		paises = StackGe.new(5)
+		paises.push("Argentina")
+		paises.push("Paraguai")
+		paises.push("Chile")
+		assert_equal paises.top(), "Chile"
 	end
 end

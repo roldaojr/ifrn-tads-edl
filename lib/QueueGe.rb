@@ -109,6 +109,13 @@ class QueueGe
 		return list
 	end
 
+	def fromList(aList)
+		@array = aList
+		@startPos = 0
+		@endPos = aList.count
+		@capacity = @endPos
+	end
+
 	private
 	##
 	# double the array capacity

@@ -36,7 +36,7 @@ class StackGe
 	#
 	# @return [Object] the element
 	def top
-		return @array[@pos]
+		return @array.at @pos-1
 	end
 	##
 	# Insert a element on top of the stack
@@ -57,7 +57,7 @@ class StackGe
 		if @pos == 0
 			raise "StackUnderow"
 		end
-		item = @array[@pos]
+		item = @array.at @pos-1
 		@pos -= 1
 		return item
 	end
