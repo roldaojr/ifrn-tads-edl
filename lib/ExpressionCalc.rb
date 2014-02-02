@@ -11,17 +11,17 @@ class ExpressionCalc
 	def initialize()
 		@operators = {'+' => 1, '-' => 1, '*' => 2, '/' => 2, '^' => 3}
 	end
-
 	##
 	# Calculate expression
 	#
 	# @param [String] expression The expression to calculate
 	def calcExp(expression)
-		infix = _textToList(expression)
-		postfix = _infixToPostfix(infix)
-		return _calcPostfix(postfix)
+		infix = textToList(expression)
+		postfix = infixToPostfix(infix)
+		return calcPostfix(postfix)
 	end
 
+	private
 	##
 	# Check if given symbol is operator or number
 	#
@@ -35,15 +35,16 @@ class ExpressionCalc
 	def hasPrecedence(op1, op2)
 		return @operators[op1] >= @operators[op2]
 	end
-
 	##
 	# Realize que operation with two numbers and one operator
 	#
 	def operation(op, val1, val2)
 		return val1.send(op, val2)
 	end
-
-	def _textToList(expression)
+	##
+	# Convert text to a list of values and operators
+	#
+	def textToList(expression)
 		eles = expression.scan(/((\d+)|(\D))/)
 		elements = []
 		for e in eles
@@ -51,8 +52,10 @@ class ExpressionCalc
 		end
 		return elements
 	end
-
-	def _infixToPostfix(elements)
+	##
+	# Convert infix expression to postfix
+	#
+	def infixToPostfix(elements)
 		postfix = StackGe.new
 		opStack = StackGe.new
 		opStackSize = 0
@@ -78,8 +81,10 @@ class ExpressionCalc
 		end
 		return postfix.toList
 	end
-
-	def _calcPostfix(elements)
+	##
+	# Calculates postfix expression
+	#
+	def calcPostfix(elements)
 		result = StackGe.new
 		for symb in elements
 			if not isOperator symb

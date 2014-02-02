@@ -37,13 +37,21 @@ class QueueGeTest < Test::Unit::TestCase
 		paises.enqueue("Brasil")
 		paises.enqueue("Equador")
 		paises.clear()
-		assert_equal paises.isEmpty?(), true
+		assert_equal paises.isEmpty?, true
 	end
 	def test_full
 		paises = QueueGe.new(3)
 		paises.enqueue("Argentina")
 		paises.enqueue("Paraguai")
 		paises.enqueue("Chile")
-		assert_equal paises.isFull?(), true
+		assert_equal paises.isFull?, true
+	end
+	def test_front_back
+		paises = QueueGe.new(3)
+		paises.enqueue("Argentina")
+		paises.enqueue("Paraguai")
+		paises.enqueue("Chile")
+		assert_equal paises.front, "Argentina"
+		assert_equal paises.back, "Chile"
 	end
 end

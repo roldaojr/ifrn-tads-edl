@@ -108,7 +108,10 @@ class QueueGe
 		end
 		return list
 	end
-
+	##
+	# Set queue elements from array
+	#
+	# @param [Array] aList Array of queue elements
 	def fromList(aList)
 		@array = aList
 		@startPos = 0

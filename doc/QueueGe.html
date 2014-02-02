@@ -1,0 +1,1192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=en_us" />
+<title>
+  Class: QueueGe
+  
+    &mdash; Documentation by YARD 0.7.4
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (Q)</a> &raquo; 
+    
+    
+    <span class="title">QueueGe</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Class: QueueGe
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">QueueGe</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/QueueGe.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    <p>
+A Queue data structure
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#back-instance_method" title="#back (instance method)">- (Object) <strong>back</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Get the last element on queue.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#clear-instance_method" title="#clear (instance method)">- (Object) <strong>clear</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Clear the queue making it empty.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dequeue-instance_method" title="#dequeue (instance method)">- (Object) <strong>dequeue</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Remove and returns the first element of the queue.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#enqueue-instance_method" title="#enqueue (instance method)">- (Object) <strong>enqueue</strong>(item) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Insert a element in end of the queue.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#fromList-instance_method" title="#fromList (instance method)">- (Object) <strong>fromList</strong>(aList) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Set queue elements from array.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#front-instance_method" title="#front (instance method)">- (Object) <strong>front</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Get the first element on queue.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (QueueGe) <strong>initialize</strong>(capacity = 10) </a>
+    
+
+    
+  </span>
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Queue initializer.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#isEmpty%3F-instance_method" title="#isEmpty? (instance method)">- (Boolean) <strong>isEmpty?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Check if queue is empty.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#isFull%3F-instance_method" title="#isFull? (instance method)">- (true, false) <strong>isFull?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Check if queue capacity is full.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#print-instance_method" title="#print (instance method)">- (Object) <strong>print</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Print the queue contents.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#size-instance_method" title="#size (instance method)">- (Integer) <strong>size</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Get the queue size.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#toList-instance_method" title="#toList (instance method)">- (Array) <strong>toList</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+Get a array of queue elements.
+</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <p class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="QueueGe (class)">QueueGe</a></span></tt>) <strong>initialize</strong>(capacity = 10) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Queue initializer
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>capacity</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>10</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'><p>
+The Capacity of the queue
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+9
+10
+11
+12</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 9</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_initialize identifier id'>initialize</span><span class='lparen token'>(</span><span class='rubyid_capacity identifier id'>capacity</span> <span class='assign token'>=</span> <span class='integer val'>10</span><span class='rparen token'>)</span>
+  <span class='rubyid_@capacity ivar id'>@capacity</span> <span class='assign token'>=</span> <span class='rubyid_capacity identifier id'>capacity</span>
+  <span class='rubyid_clear identifier id'>clear</span><span class='lparen token'>(</span><span class='rparen token'>)</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="back-instance_method">
+  
+    - (<tt>Object</tt>) <strong>back</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Get the last element on queue
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+the last element
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+45
+46
+47</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 45</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_back identifier id'>back</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_@array ivar id'>@array</span><span class='lbrack token'>[</span><span class='rubyid_@endPos ivar id'>@endPos</span><span class='minus op'>-</span><span class='integer val'>1</span><span class='rbrack token'>]</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="clear-instance_method">
+  
+    - (<tt>Object</tt>) <strong>clear</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Clear the queue making it empty
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80
+81
+82
+83</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 79</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_clear identifier id'>clear</span>
+  <span class='rubyid_@array ivar id'>@array</span> <span class='assign token'>=</span> <span class='rubyid_Array constant id'>Array</span><span class='dot token'>.</span><span class='rubyid_new identifier id'>new</span><span class='lparen token'>(</span><span class='rubyid_@capacity ivar id'>@capacity</span><span class='rparen token'>)</span>
+  <span class='rubyid_@startPos ivar id'>@startPos</span> <span class='assign token'>=</span> <span class='integer val'>0</span>
+  <span class='rubyid_@endPos ivar id'>@endPos</span> <span class='assign token'>=</span> <span class='integer val'>0</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="dequeue-instance_method">
+  
+    - (<tt>Object</tt>) <strong>dequeue</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Remove and returns the first element of the queue
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+the first element of the queue
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 63</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_dequeue identifier id'>dequeue</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_@endPos ivar id'>@endPos</span> <span class='eq op'>==</span> <span class='rubyid_@startPos ivar id'>@startPos</span>
+    <span class='rubyid_raise identifier id'>raise</span> <span class='string val'>&quot;QueueUnderow&quot;</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_item identifier id'>item</span> <span class='assign token'>=</span> <span class='rubyid_@array ivar id'>@array</span><span class='lbrack token'>[</span><span class='rubyid_@startPos ivar id'>@startPos</span> <span class='mod op'>%</span> <span class='rubyid_@capacity ivar id'>@capacity</span><span class='rbrack token'>]</span>
+  <span class='rubyid_@startPos ivar id'>@startPos</span> <span class='opasgn op'>+=</span> <span class='integer val'>1</span>
+  <span class='comment val'># zerar ponteiros</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_@endPos ivar id'>@endPos</span> <span class='eq op'>==</span> <span class='rubyid_@startPos ivar id'>@startPos</span>
+    <span class='rubyid_@startPos ivar id'>@startPos</span> <span class='assign token'>=</span> <span class='integer val'>0</span>
+    <span class='rubyid_@endPos ivar id'>@endPos</span> <span class='assign token'>=</span> <span class='integer val'>0</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_item identifier id'>item</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="enqueue-instance_method">
+  
+    - (<tt>Object</tt>) <strong>enqueue</strong>(item) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Insert a element in end of the queue
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>item</span>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+Element to insert
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54
+55
+56
+57
+58</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 52</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_enqueue identifier id'>enqueue</span><span class='lparen token'>(</span><span class='rubyid_item identifier id'>item</span><span class='rparen token'>)</span>
+  <span class='rubyid_if if kw'>if</span> <span class='rubyid_@endPos ivar id'>@endPos</span><span class='minus op'>-</span><span class='rubyid_@startPos ivar id'>@startPos</span> <span class='gt op'>&gt;</span> <span class='rubyid_@capacity ivar id'>@capacity</span><span class='minus op'>-</span><span class='integer val'>1</span>
+    <span class='rubyid_doubleArray identifier id'>doubleArray</span><span class='lparen token'>(</span><span class='rparen token'>)</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_@array ivar id'>@array</span><span class='lbrack token'>[</span><span class='rubyid_@endPos ivar id'>@endPos</span> <span class='mod op'>%</span> <span class='rubyid_@capacity ivar id'>@capacity</span><span class='rbrack token'>]</span> <span class='assign token'>=</span> <span class='rubyid_item identifier id'>item</span>
+  <span class='rubyid_@endPos ivar id'>@endPos</span> <span class='opasgn op'>+=</span> <span class='integer val'>1</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="fromList-instance_method">
+  
+    - (<tt>Object</tt>) <strong>fromList</strong>(aList) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Set queue elements from array
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <h3>Parameters:</h3>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>aList</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+Array of queue elements
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+115
+116
+117
+118
+119
+120</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 115</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_fromList identifier id'>fromList</span><span class='lparen token'>(</span><span class='rubyid_aList identifier id'>aList</span><span class='rparen token'>)</span>
+  <span class='rubyid_@array ivar id'>@array</span> <span class='assign token'>=</span> <span class='rubyid_aList identifier id'>aList</span>
+  <span class='rubyid_@startPos ivar id'>@startPos</span> <span class='assign token'>=</span> <span class='integer val'>0</span>
+  <span class='rubyid_@endPos ivar id'>@endPos</span> <span class='assign token'>=</span> <span class='rubyid_aList identifier id'>aList</span><span class='dot token'>.</span><span class='rubyid_count identifier id'>count</span>
+  <span class='rubyid_@capacity ivar id'>@capacity</span> <span class='assign token'>=</span> <span class='rubyid_@endPos ivar id'>@endPos</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="front-instance_method">
+  
+    - (<tt>Object</tt>) <strong>front</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Get the first element on queue
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Object</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+the first element
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+38
+39
+40</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 38</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_front identifier id'>front</span> 
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_@array ivar id'>@array</span><span class='lbrack token'>[</span><span class='rubyid_@startPos ivar id'>@startPos</span><span class='rbrack token'>]</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="isEmpty?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>isEmpty?</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Check if queue is empty
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+true if empty false if not empty
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 17</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_isEmpty? fid id'>isEmpty?</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_@endPos ivar id'>@endPos</span><span class='minus op'>-</span><span class='rubyid_@startPos ivar id'>@startPos</span> <span class='eq op'>==</span> <span class='integer val'>0</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="isFull?-instance_method">
+  
+    - (<tt>true</tt>, <tt>false</tt>) <strong>isFull?</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Check if queue capacity is full
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>true</tt>, <tt>false</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+true if full false if not Full
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+24
+25
+26</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 24</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_isFull? fid id'>isFull?</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_@endPos ivar id'>@endPos</span><span class='minus op'>-</span><span class='rubyid_@startPos ivar id'>@startPos</span> <span class='eq op'>==</span> <span class='rubyid_@capacity ivar id'>@capacity</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="print-instance_method">
+  
+    - (<tt>Object</tt>) <strong>print</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Print the queue contents
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+87
+88
+89
+90
+91
+92
+93
+94
+95</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 87</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_print identifier id'>print</span>
+  <span class='rubyid_for for kw'>for</span> <span class='rubyid_i identifier id'>i</span> <span class='rubyid_in in kw'>in</span> <span class='rubyid_@startPos ivar id'>@startPos</span><span class='dot2 op'>..</span><span class='rubyid_@endPos ivar id'>@endPos</span><span class='minus op'>-</span><span class='integer val'>1</span>
+    <span class='rubyid_if if kw'>if</span> <span class='rubyid_i identifier id'>i</span> <span class='geq op'>&gt;=</span> <span class='rubyid_@capacity ivar id'>@capacity</span>
+      <span class='rubyid_puts identifier id'>puts</span> <span class='rubyid_@array ivar id'>@array</span><span class='lbrack token'>[</span><span class='rubyid_i identifier id'>i</span> <span class='mod op'>%</span> <span class='rubyid_@capacity ivar id'>@capacity</span><span class='rbrack token'>]</span>
+    <span class='rubyid_else else kw'>else</span>
+      <span class='rubyid_puts identifier id'>puts</span> <span class='rubyid_@array ivar id'>@array</span><span class='lbrack token'>[</span><span class='rubyid_i identifier id'>i</span><span class='rbrack token'>]</span>
+    <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_end end kw'>end</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="size-instance_method">
+  
+    - (<tt>Integer</tt>) <strong>size</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Get the queue size
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+Size of queue
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+31
+32
+33</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 31</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_size identifier id'>size</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_@endPos ivar id'>@endPos</span><span class='minus op'>-</span><span class='rubyid_@startPos ivar id'>@startPos</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="toList-instance_method">
+  
+    - (<tt>Array</tt>) <strong>toList</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+Get a array of queue elements
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+Array of queue elements
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/QueueGe.rb', line 100</span>
+
+<span class='rubyid_def def kw'>def</span> <span class='rubyid_toList identifier id'>toList</span>
+  <span class='rubyid_list identifier id'>list</span> <span class='assign token'>=</span> <span class='lbrack token'>[</span><span class='rbrack token'>]</span>
+  <span class='rubyid_for for kw'>for</span> <span class='rubyid_i identifier id'>i</span> <span class='rubyid_in in kw'>in</span> <span class='rubyid_@startPos ivar id'>@startPos</span><span class='dot2 op'>..</span><span class='rubyid_@endPos ivar id'>@endPos</span><span class='minus op'>-</span><span class='integer val'>1</span>
+    <span class='rubyid_if if kw'>if</span> <span class='rubyid_i identifier id'>i</span> <span class='geq op'>&gt;=</span> <span class='rubyid_@capacity ivar id'>@capacity</span>
+      <span class='rubyid_list identifier id'>list</span> <span class='lshft op'>&lt;&lt;</span> <span class='rubyid_@array ivar id'>@array</span><span class='lbrack token'>[</span><span class='rubyid_i identifier id'>i</span> <span class='mod op'>%</span> <span class='rubyid_@capacity ivar id'>@capacity</span><span class='rbrack token'>]</span>
+    <span class='rubyid_else else kw'>else</span>
+      <span class='rubyid_list identifier id'>list</span> <span class='lshft op'>&lt;&lt;</span> <span class='rubyid_@array ivar id'>@array</span><span class='lbrack token'>[</span><span class='rubyid_i identifier id'>i</span><span class='rbrack token'>]</span>
+    <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_end end kw'>end</span>
+  <span class='rubyid_return return kw'>return</span> <span class='rubyid_list identifier id'>list</span>
+<span class='rubyid_end end kw'>end</span>
+</pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Sun Feb  2 17:19:59 2014 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.4 (ruby-1.8.7).
+</div>
+
+  </body>
+</html>
