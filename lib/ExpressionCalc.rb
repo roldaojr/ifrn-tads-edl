@@ -55,29 +55,33 @@ class ExpressionCalc
 	def _infixToPostfix(elements)
 		postfix = StackGe.new
 		opStack = StackGe.new
+		opStackSize = 0
 		for symb in elements
-			if not isOperator symb
+			if symb == '('
+				opStackSize = opStack.size
+			elsif symb == ')'
+				while not opStack.isEmpty? and opStack.size > opStackSize
+					postfix.push opStack.pop
+				end
+				opStackSize = 0
+			elsif not isOperator symb
 				postfix.push symb
 			else
-				while not opStack.isEmpty? and hasPrecedence(opStack.top, symb)
+				while not opStack.isEmpty? and hasPrecedence(opStack.top, symb) and opStack.size > opStackSize
 					postfix.push opStack.pop
 				end
 				opStack.push symb
 			end
 		end
 		while not opStack.isEmpty?
-			topSymb = opStack.pop
-			postfix.push topSymb
+			postfix.push opStack.pop
 		end
 		return postfix.toList
 	end
 
 	def _calcPostfix(elements)
-		queue = QueueGe.new
 		result = StackGe.new
-		queue.fromList(elements)
-		while not queue.isEmpty?
-			symb = queue.dequeue
+		for symb in elements
 			if not isOperator symb
 				result.push symb
 			else

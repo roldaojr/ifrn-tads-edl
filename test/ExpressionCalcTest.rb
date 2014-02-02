@@ -21,5 +21,8 @@ class ExpressionCalcTest < Test::Unit::TestCase
 		calc = ExpressionCalc.new
 		assert_equal calc.calcExp('3+6*2'), 15.0
 		assert_equal calc.calcExp('3*6+2'), 20.0
+		assert_equal calc.calcExp('3*(6+2)'), 24.0
+		assert_equal calc.calcExp('(3+6)*2'), 18.0
+		assert_equal calc.calcExp('(3+6)*2*(1+1)'), 36.0
 	end
 end
