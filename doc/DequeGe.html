@@ -2,24 +2,22 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=en_us" />
 <title>
   Class: DequeGe
   
-    &mdash; Documentation by YARD 0.8.7.3
+    &mdash; Documentation by YARD 0.7.4
   
 </title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
 
-  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
-  hasFrames = window.top.frames.main ? true : false;
   relpath = '';
-  framesUrl = "frames.html#!" + escape(window.location.href);
+  if (relpath != '') relpath += '/';
 </script>
-
 
   <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
 
@@ -28,41 +26,36 @@
 
   </head>
   <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
     <div id="header">
       <div id="menu">
   
-    <a href="_index.html">Index (D)</a> &raquo;
+    <a href="_index.html">Index (D)</a> &raquo; 
     
     
     <span class="title">DequeGe</span>
   
-
+  
   <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
 </div>
 
       <div id="search">
   
-    <a class="full_list_link" id="class_list_link"
-        href="class_list.html">
-      Class List
-    </a>
+    <a id="class_list_link" href="#">Class List</a>
   
-    <a class="full_list_link" id="method_list_link"
-        href="method_list.html">
-      Method List
-    </a>
+    <a id="method_list_link" href="#">Method List</a>
   
-    <a class="full_list_link" id="file_list_link"
-        href="file_list.html">
-      File List
-    </a>
+    <a id="file_list_link" href="#">File List</a>
   
 </div>
       <div class="clear"></div>
     </div>
-
+    
     <iframe id="search_frame"></iframe>
-
+    
     <div id="content"><h1>Class: DequeGe
   
   
@@ -116,8 +109,6 @@ A Deque data structure
 
 
 
-
-
   
     <h2>
       Instance Method Summary
@@ -134,7 +125,6 @@ A Deque data structure
 
     
   </span>
-  
   
   
   
@@ -165,7 +155,6 @@ Get the last element on deque.
   
   
   
-  
 
   
     <span class="summary_desc"><div class='inline'><p>
@@ -190,7 +179,6 @@ Clear the deque making it empty.
   
   
   
-  
 
   
     <span class="summary_desc"><div class='inline'><p>
@@ -209,7 +197,6 @@ Get the first element on deque.
 
     
   </span>
-  
   
     <span class="note title constructor">constructor</span>
   
@@ -242,7 +229,6 @@ Queue initializer.
   
   
   
-  
 
   
     <span class="summary_desc"><div class='inline'><p>
@@ -261,7 +247,6 @@ Check if deque is empty.
 
     
   </span>
-  
   
   
   
@@ -292,7 +277,6 @@ Check if deque capacity is full.
   
   
   
-  
 
   
     <span class="summary_desc"><div class='inline'><p>
@@ -311,7 +295,6 @@ Remove and returns the last element of the deque.
 
     
   </span>
-  
   
   
   
@@ -342,7 +325,6 @@ Remove and returns the first element of the deque.
   
   
   
-  
 
   
     <span class="summary_desc"><div class='inline'><p>
@@ -361,7 +343,6 @@ Print the deque contents.
 
     
   </span>
-  
   
   
   
@@ -392,7 +373,6 @@ Insert a element in end of the deque.
   
   
   
-  
 
   
     <span class="summary_desc"><div class='inline'><p>
@@ -411,7 +391,6 @@ Insert a element in front of the deque.
 
     
   </span>
-  
   
   
   
@@ -442,7 +421,6 @@ Get the deque size.
   
   
   
-  
 
   
     <span class="summary_desc"><div class='inline'><p>
@@ -460,15 +438,13 @@ Get a array of deque elements.
   <h2>Constructor Details</h2>
   
     <div class="method_details first">
-  <h3 class="signature first" id="initialize-instance_method">
+  <p class="signature first" id="initialize-instance_method">
   
     - (<tt><span class='object_link'><a href="" title="DequeGe (class)">DequeGe</a></span></tt>) <strong>initialize</strong>(capacity = 10) 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Queue initializer
@@ -478,7 +454,7 @@ Queue initializer
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
+  <h3>Parameters:</h3>
 <ul class="param">
   
     <li>
@@ -532,18 +508,16 @@ The Capacity of the deque
 
   <div id="instance_method_details" class="method_details_list">
     <h2>Instance Method Details</h2>
-
+    
     
       <div class="method_details first">
-  <h3 class="signature first" id="back-instance_method">
+  <p class="signature first" id="back-instance_method">
   
     - (<tt>Object</tt>) <strong>back</strong> 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Get the last element on deque
@@ -554,7 +528,7 @@ Get the last element on deque
 </div>
 <div class="tags">
   
-<p class="tag_title">Returns:</p>
+<h3>Returns:</h3>
 <ul class="return">
   
     <li>
@@ -597,15 +571,13 @@ the last element
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="clear-instance_method">
+  <p class="signature " id="clear-instance_method">
   
     - (<tt>Object</tt>) <strong>clear</strong> 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Clear the deque making it empty
@@ -644,15 +616,13 @@ Clear the deque making it empty
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="front-instance_method">
+  <p class="signature " id="front-instance_method">
   
     - (<tt>Object</tt>) <strong>front</strong> 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Get the first element on deque
@@ -663,7 +633,7 @@ Get the first element on deque
 </div>
 <div class="tags">
   
-<p class="tag_title">Returns:</p>
+<h3>Returns:</h3>
 <ul class="return">
   
     <li>
@@ -706,15 +676,13 @@ the first element
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="isEmpty?-instance_method">
+  <p class="signature " id="isEmpty?-instance_method">
   
     - (<tt>Boolean</tt>) <strong>isEmpty?</strong> 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Check if deque is empty
@@ -725,7 +693,7 @@ Check if deque is empty
 </div>
 <div class="tags">
   
-<p class="tag_title">Returns:</p>
+<h3>Returns:</h3>
 <ul class="return">
   
     <li>
@@ -768,15 +736,13 @@ true if empty false if not empty
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="isFull?-instance_method">
+  <p class="signature " id="isFull?-instance_method">
   
     - (<tt>true</tt>, <tt>false</tt>) <strong>isFull?</strong> 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Check if deque capacity is full
@@ -787,7 +753,7 @@ Check if deque capacity is full
 </div>
 <div class="tags">
   
-<p class="tag_title">Returns:</p>
+<h3>Returns:</h3>
 <ul class="return">
   
     <li>
@@ -830,15 +796,13 @@ true if full false if not Full
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="popBack-instance_method">
+  <p class="signature " id="popBack-instance_method">
   
     - (<tt>Object</tt>) <strong>popBack</strong> 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Remove and returns the last element of the deque
@@ -849,7 +813,7 @@ Remove and returns the last element of the deque
 </div>
 <div class="tags">
   
-<p class="tag_title">Returns:</p>
+<h3>Returns:</h3>
 <ul class="return">
   
     <li>
@@ -912,15 +876,13 @@ the last element of the deque
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="popFront-instance_method">
+  <p class="signature " id="popFront-instance_method">
   
     - (<tt>Object</tt>) <strong>popFront</strong> 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Remove and returns the first element of the deque
@@ -931,7 +893,7 @@ Remove and returns the first element of the deque
 </div>
 <div class="tags">
   
-<p class="tag_title">Returns:</p>
+<h3>Returns:</h3>
 <ul class="return">
   
     <li>
@@ -992,15 +954,13 @@ the first element of the deque
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="print-instance_method">
+  <p class="signature " id="print-instance_method">
   
     - (<tt>Object</tt>) <strong>print</strong> 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Print the deque contents
@@ -1071,15 +1031,13 @@ Print the deque contents
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="pushBack-instance_method">
+  <p class="signature " id="pushBack-instance_method">
   
     - (<tt>Object</tt>) <strong>pushBack</strong>(item) 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Insert a element in end of the deque
@@ -1089,7 +1047,7 @@ Insert a element in end of the deque
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
+  <h3>Parameters:</h3>
 <ul class="param">
   
     <li>
@@ -1157,15 +1115,13 @@ Element to insert
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="pushFront-instance_method">
+  <p class="signature " id="pushFront-instance_method">
   
     - (<tt>Object</tt>) <strong>pushFront</strong>(element) 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Insert a element in front of the deque
@@ -1175,7 +1131,7 @@ Insert a element in front of the deque
   </div>
 </div>
 <div class="tags">
-  <p class="tag_title">Parameters:</p>
+  <h3>Parameters:</h3>
 <ul class="param">
   
     <li>
@@ -1243,15 +1199,13 @@ Element to insert
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="size-instance_method">
+  <p class="signature " id="size-instance_method">
   
     - (<tt>Integer</tt>) <strong>size</strong> 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Get the deque size
@@ -1262,7 +1216,7 @@ Get the deque size
 </div>
 <div class="tags">
   
-<p class="tag_title">Returns:</p>
+<h3>Returns:</h3>
 <ul class="return">
   
     <li>
@@ -1305,15 +1259,13 @@ Size of deque
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="toList-instance_method">
+  <p class="signature " id="toList-instance_method">
   
     - (<tt>Array</tt>) <strong>toList</strong> 
   
 
   
-
-  
-</h3><div class="docstring">
+</p><div class="docstring">
   <div class="discussion">
     <p>
 Get a array of deque elements
@@ -1324,7 +1276,7 @@ Get a array of deque elements
 </div>
 <div class="tags">
   
-<p class="tag_title">Returns:</p>
+<h3>Returns:</h3>
 <ul class="return">
   
     <li>
@@ -1383,11 +1335,11 @@ Array of deque elements
   </div>
 
 </div>
-
+    
     <div id="footer">
-  Generated on 01/12/14 21:51:06 by
+  Generated on Sun Feb  2 17:19:59 2014 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.8.7.3 (ruby-1.8.6).
+  0.7.4 (ruby-1.8.7).
 </div>
 
   </body>
