@@ -12,11 +12,16 @@ As Filas são um tipo container, especicamente concebido para funcionar no conte
 O Projeto implementa essas estruturas em linguagem Ruby, para mais detalhes consulte a [Documentação da API](http://roldaojr.github.io/ifrn-tads-edl/doc/)
 
 ### Classes implementadas ###
-StackGe - Implementa uma pilha 
+StackGe - Implementa uma pilha
+
 QueueGe - Implementa uma fila
+
 DequeGe - Implementa um deque
+
 QueueAsStack - Implementa uma pilha usando uma fila
+
 ExpressionCalc - Calcula expressões matemáticas
+
 SortByDist - Ordena uma lista de números por distribuição
 
 ### Instalando ###
