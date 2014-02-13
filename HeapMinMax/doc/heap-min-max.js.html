@@ -1,4 +1,31 @@
-/**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: heap-min-max.js</title>
+    
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+    
+    <h1 class="page-title">Source: heap-min-max.js</h1>
+    
+    
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source"><code>/**
  * Creates an instance of HeapNode
  *
  * @constructor
@@ -40,18 +67,18 @@ HeapMinMax = function(capacity) {
 		var min
 		var left = i*2
 		var right = i*2+1
-		if(this.compare(left, right) < 0) {
+		if(this.compare(left, right) &lt; 0) {
 			min = left
 		} else {
 			min = right
 		}
-		if(left*2 < this.elements.length && this.compare(left*2, min) < 0)
+		if(left*2 &lt; this.elements.length && this.compare(left*2, min) &lt; 0)
 			min = left*2
-		if(left*2+1 < this.elements.length && this.compare(left*2+1, min) < 0)
+		if(left*2+1 &lt; this.elements.length && this.compare(left*2+1, min) &lt; 0)
 			min = left*2+1
-		if(right*2 < this.elements.length && this.compare(right*2, min) < 0)
+		if(right*2 &lt; this.elements.length && this.compare(right*2, min) &lt; 0)
 			min = left*2
-		if(right*2+1 < this.elements.length && this.compare(right*2+1, min) < 0)
+		if(right*2+1 &lt; this.elements.length && this.compare(right*2+1, min) &lt; 0)
 			min = left*2+1
 		return min
 	}
@@ -66,10 +93,10 @@ HeapMinMax = function(capacity) {
 		} else {
 			max = right
 		}
-		if(left*2 < this.elements.length && this.compare(left*2, max) > 0) max = left*2
-		if(left*2+1 < this.elements.length && this.compare(left*2+1, max) > 0) max = left*2+1
-		if(right*2 < this.elements.length && this.compare(right*2, max) > 0) max = left*2
-		if(right*2+1 < this.elements.length && this.compare(right*2+1, max) > 0) max = left*2+1
+		if(left*2 &lt; this.elements.length && this.compare(left*2, max) > 0) max = left*2
+		if(left*2+1 &lt; this.elements.length && this.compare(left*2+1, max) > 0) max = left*2+1
+		if(right*2 &lt; this.elements.length && this.compare(right*2, max) > 0) max = left*2
+		if(right*2+1 &lt; this.elements.length && this.compare(right*2+1, max) > 0) max = left*2+1
 		return max
 	}
 
@@ -83,19 +110,19 @@ HeapMinMax = function(capacity) {
 
 	this.downMin = function(i) {
 		console.log("downMin", i)
-		if(i*2 < this.elements.length) {
+		if(i*2 &lt; this.elements.length) {
 			m = this.minChildGrandchild(i)
 			if(Math.floor(m/4) == i) {
-				if(this.compare(m, i) < 0) {
+				if(this.compare(m, i) &lt; 0) {
 					this.swap(m, i)
 					p = Math.floor(m/2)
-					if(this.compare(p, m) < 0) {
+					if(this.compare(p, m) &lt; 0) {
 						this.swap(p, m)
 					}
 					this.downMin(m)
 				}
 			} else {
-				if(this.compare(m, i) < 0) {
+				if(this.compare(m, i) &lt; 0) {
 					this.swap(m, i)
 				}
 			}
@@ -104,7 +131,7 @@ HeapMinMax = function(capacity) {
 
 	this.downMax = function(i) {
 		console.log("downMax", i)
-		if(i*2 < this.elements.length) {
+		if(i*2 &lt; this.elements.length) {
 			m = this.maxChildGrandchild(i)
 			if(Math.floor(m/4) == i) {
 				if(this.compare(m, i) > 0) {
@@ -133,7 +160,7 @@ HeapMinMax = function(capacity) {
 				this.upMin(i)
 			}
 		} else {
-			if(p >= 1 && this.compare(i, p) < 0) {
+			if(p >= 1 && this.compare(i, p) &lt; 0) {
 				this.swap(p, i)
 				this.upMin(p)
 			} else {
@@ -145,7 +172,7 @@ HeapMinMax = function(capacity) {
 	this.upMin = function(i) {
 		g = Math.floor(i/4)
 		if(g > 0) {
-			if(this.compare(i, g) < 0) {
+			if(this.compare(i, g) &lt; 0) {
 				this.swap(i, g)
 				this.upMin(i)
 			}
@@ -228,14 +255,14 @@ HeapMinMax.prototype = {
 	 * @return {object} The min element
 	 */
 	deleteMin: function() {
-		if(this.elements.length < 1) {
+		if(this.elements.length &lt; 1) {
 			throw "Heap underflow"
 		}
-		min = this.elements[0]
+		max = this.elements[0]
 		this.swap(1, this.elements.length)
 		this.down(1)
 		this.deleteLastNode()
-		return min
+		return max
 	},
 	/**
 	 * Remove min element max heap
@@ -244,18 +271,17 @@ HeapMinMax.prototype = {
 	 */
 	deleteMax: function() {
 		if(this.compare(2, 3) > 0) {
-			maxIdx = 2
+			max = 2
 		} else {
-			maxIdex = 3
+			max = 3
 		}
-		max = this.elements[maxIdx]
-		this.swap(maxIdx, this.elements.length)
-		this.down(maxIdx)
+		this.swap(max, this.elements.length)
+		this.down(max)
 		this.deleteLastNode()
 		return max
 	},
 	/**
-	 * Delete ao nodes from heap
+	 * Make heap empty
 	 */
 	makeClear: function() {
 		this.size = 0
@@ -268,4 +294,26 @@ HeapMinMax.prototype = {
 	toArray: function() {
 		return this.elements
 	},
-}
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="HeapMinMax.html">HeapMinMax</a></li><li><a href="HeapNode.html">HeapNode</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.2.2</a> on Thu Feb 13 2014 03:51:47 GMT-0000 (UTC)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
