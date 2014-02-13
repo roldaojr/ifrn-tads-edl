@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta http-equiv="meta" content="Content-type: text/html; charset=utf-8">
 <title></title>
 <!--<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="bootstrap-theme.min.css">-->
@@ -13,11 +14,10 @@
 <script type="text/javascript">
 $(document).ready(function() {
 	items = [4, 70, 38, 20, 8, 35, 19, 30, 28, 18, 25, 36, 37, 26, 22]
-	heapmm = new HeapMinMax(15)
+	heapmm = new HeapMinMaxGui(items.length, "heapcanvas")
 	for(var i = 0; i < items.length; i++) {
 		heapmm.insert(items[i], items[i])
 	}
-	heapmm.GUI("heapcanvas")
 	heapmm.draw()
 
 	$("#aleatorio").click(function(){
@@ -29,10 +29,14 @@ $(document).ready(function() {
 	})
 	$("#construir").click(function(){
 		nodes = $("#numeros").val().split(" ")
-		buildHeap(nodes)
+		heapmm = new HeapMinMaxGui(nodes.length, "heapcanvas")
+		//heapmm.makeClear()
+		for(var i = 0; i < nodes.length; i++) {
+			heapmm.insert(nodes[i], nodes[i])
+		}
+		heapmm.draw()
 	})
 	$("#sel_minimo").click(function(){
-		console.log(heapmm.elements[0].key)
 		heapmm.toggleSelect(heapmm.findMin())
 	})
 	$("#sel_maximo").click(function(){
@@ -43,6 +47,8 @@ $(document).ready(function() {
 		heapmm.animate()
 	})
 	$("#del_maximo").click(function(){
+		heapmm.deleteMax()
+		heapmm.animate()
 	})
 });
 </script>
@@ -50,12 +56,12 @@ $(document).ready(function() {
 <body>
 <div class="container">
 <div class="buttons">
-	<button class="btn btn-default" id="aleatorio">Gerar vetor aleatório</button>
+	<button class="btn btn-default" id="aleatorio">Gerar vetor aleat&oacute;rio</button>
 	<button class="btn btn-default" id="construir">Construir</button>
-	<button class="btn btn-default" id="sel_minimo">Selecionar mínimo</button>
-	<button class="btn btn-default" id="sel_maximo">Selecionar máximo</button>
-	<button class="btn btn-default" id="del_minimo">Deletar mínimo</button>
-	<button class="btn btn-default" id="del_maximo">Deletar máximo</button>
+	<button class="btn btn-default" id="sel_minimo">Selecionar m&iacute;nimo</button>
+	<button class="btn btn-default" id="sel_maximo">Selecionar m&aacute;ximo</button>
+	<button class="btn btn-default" id="del_minimo">Deletar m&iacute;nimo</button>
+	<button class="btn btn-default" id="del_maximo">Deletar m&aacute;ximo</button>
 </div>
 <div>
 	<input class="form-control" type="text" id="numeros" placeholder="Números"/>

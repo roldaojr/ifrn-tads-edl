@@ -6,7 +6,7 @@
  * @param {object} Content of node
  * @param {number} Key of node
  */
-function HeapNode(key, content) {
+HeapNode = function(key, content) {
 	this.content = content
 	this.key = key
 }
@@ -17,10 +17,11 @@ function HeapNode(key, content) {
  * @this {HeapMinMax}
  * @param {number} Initial heap size
  */
-function HeapMinMax(size) {
-	this.elements = []
-	this.capacity = size
+HeapMinMax = function(capacity) {
+	this.capacity = capacity
+	this.makeClear()
 
+	// compare two heap positions
 	this.compare = function(i, j) {
 		if(this.elements[i-1].key > this.elements[j-1].key) {
 			return 1
@@ -31,39 +32,46 @@ function HeapMinMax(size) {
 		}
 	}
 
+	// return true if is level min
 	this.isLevelMin = function(i) {
 		return (Math.floor(Math.log(i) / Math.LN2)+1) % 2 == 1
 	}
 
+	// get minimum of child and grandchild
 	this.minChildGrandchild = function(i){
 		var min
 		var left = i*2
 		var right = i*2+1
 		if(this.compare(left, right) < 0) {
 			min = left
-			if(left*2 < this.elements.length && this.compare(left*2, min) < 0) min = left*2
-			if(left*2+1 < this.elements.length && this.compare(left*2+1, min) < 0) min = left*2+1
 		} else {
 			min = right
-			if(right*2 < this.elements.length && this.compare(right*2, min) < 0) min = left*2
-			if(right*2+1 < this.elements.length && this.compare(right*2+1, min) < 0) min = left*2+1
 		}
+		if(left*2 < this.elements.length && this.compare(left*2, min) < 0)
+			min = left*2
+		if(left*2+1 < this.elements.length && this.compare(left*2+1, min) < 0)
+			min = left*2+1
+		if(right*2 < this.elements.length && this.compare(right*2, min) < 0)
+			min = left*2
+		if(right*2+1 < this.elements.length && this.compare(right*2+1, min) < 0)
+			min = left*2+1
 		return min
 	}
 
+	// get maximum of child and grandchild
 	this.maxChildGrandchild = function(i){
 		var max
 		var left = i*2
 		var right = i*2+1
 		if(this.compare(left, right) > 0) {
 			max = left
-			if(left*2 < this.elements.length && this.compare(left*2, max) > 0) max = left*2
-			if(left*2+1 < this.elements.length && this.compare(left*2+1, max) > 0) max = left*2+1
 		} else {
 			max = right
-			if(right*2 < this.elements.length && this.compare(right*2, max) > 0) max = left*2
-			if(right*2+1 < this.elements.length && this.compare(right*2+1, max) > 0) max = left*2+1
 		}
+		if(left*2 < this.elements.length && this.compare(left*2, max) > 0) max = left*2
+		if(left*2+1 < this.elements.length && this.compare(left*2+1, max) > 0) max = left*2+1
+		if(right*2 < this.elements.length && this.compare(right*2, max) > 0) max = left*2
+		if(right*2+1 < this.elements.length && this.compare(right*2+1, max) > 0) max = left*2+1
 		return max
 	}
 
@@ -164,7 +172,7 @@ HeapMinMax.prototype = {
 	},
 
 	deleteLastNode: function() {
-		delete this.elements[this.elements.length-1]
+		this.elements.splice(this.elements.length-1, 1)
 	},
 
 	/**
@@ -208,11 +216,11 @@ HeapMinMax.prototype = {
 	 *
 	 * @param {HeapNode} Element to insert
 	 */
-	insert: function(key, value) {
-		if(this.elements.length == this.capacity) {
+	insert: function(key, content) {
+		/*if(this.elements.length > this.capacity) {
 			throw "Heap overflow"
-		}
-		this.elements.push(new HeapNode(key, value))
+		}*/
+		this.elements.push(new HeapNode(key, content))
 		this.up(this.elements.length-1)
 	},
 	/**
@@ -221,7 +229,6 @@ HeapMinMax.prototype = {
 	 * @return {object} The min element
 	 */
 	deleteMin: function() {
-		console.log("deleteMin")
 		if(this.elements.length < 1) {
 			throw "Heap underflow"
 		}
@@ -237,6 +244,15 @@ HeapMinMax.prototype = {
 	 * @return {object} The max element
 	 */
 	deleteMax: function() {
+		if(this.compare(2, 3) > 0) {
+			max = 2
+		} else {
+			max = 3
+		}
+		this.swap(max, this.elements.length)
+		this.down(max)
+		this.deleteLastNode()
+		return max
 	},
 	/**
 	 * Make heap empty

@@ -2,7 +2,11 @@ Lista de Prioridade Máximos e Mínimos (Heap Min Max)
 =============
 
 ### Introdução ###
-Lista de prioridade min-max (Heap Min Max) é yma generalização da lista prioridade (Binary Heap) permite tempo de acesso constante ao elemento de maior e menor prioridade
+O objetivo dessa tarefa é implementar um TADs (Tipo Abastratos de Dados) - MinMaxHeap - genérico, ou seja, ser capaz de associar diferentes tipos de dados.
+
+Uma heap min-max é uma fila de prioridade com duas extremidades, implementando como uma visão modificada de heap binário. Ao contrário de heap binário, os nós obedecem a propriedade __min-max heap__. Cada nõ no nível impar são valores de mínimo e os nos de nível par são valores de máximos.
 
 ### Usando ###
-Para usar as classes basta apenas incluir o arquivo heap-min-max.js
+Para usar essa estrutura basta apenas incluir o arquivo heap-min-max.js
+
+Para mais detalhes de como usar veja o arquivo example.html que se utiliza uma estrutura HeapMinMax em interface gráfica.
