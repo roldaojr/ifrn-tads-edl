@@ -12,6 +12,8 @@ O Projeto implementa essas estruturas em linguagem Ruby, para mais detalhes cons
 
 ## Classes implementadas ##
 
+| Classe         | Objetivo                                     |
+|----------------|----------------------------------------------|
 | StackGe        | Implementa uma pilha                         |
 | QueueGe        | Implementa uma fila                          |
 | DequeGe        | Implementa um deque                          |
