@@ -9,4 +9,6 @@ Uma heap min-max é uma fila de prioridade com duas extremidades, implementando 
 ### Usando ###
 Para usar essa estrutura basta apenas incluir o arquivo heap-min-max.js
 
-Para mais detalhes de como usar veja o arquivo example.html que se utiliza uma estrutura HeapMinMax em interface gráfica.
+Para mais detalhes de como usar veja o arquivo [example.html](http://roldaojr.github.io/ifrn-tads-edl/HeapMinMax/example.html) que se utiliza uma estrutura HeapMinMax em interface gráfica.
+
+[Documentação da API](http://roldaojr.github.io/ifrn-tads-edl/HeapMinMax/doc/)
